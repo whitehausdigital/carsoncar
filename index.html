@@ -828,8 +828,9 @@
        ======================================================== */
     .booking-grid {
       display: grid;
-      grid-template-columns: 1.2fr 0.8fr;
-      gap: 48px;
+      grid-template-columns: 1fr;
+      max-width: 680px;
+      margin: 0 auto;
       align-items: start;
     }
 
@@ -954,69 +955,6 @@
 
     .form-success p {
       color: var(--text-secondary);
-    }
-
-    /* Calendar side */
-    .booking-calendar {
-      background: var(--card-bg);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 40px;
-      text-align: center;
-    }
-
-    .booking-calendar .calendar-icon {
-      width: 64px;
-      height: 64px;
-      background: var(--accent);
-      border-radius: 4px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 0 auto 24px;
-      transform: rotate(45deg);
-    }
-
-    .booking-calendar .calendar-icon i {
-      font-size: 1.5rem;
-      color: var(--text);
-      transform: rotate(-45deg);
-    }
-
-    .booking-calendar h3 {
-      font-size: 1.15rem;
-      font-weight: 700;
-      margin-bottom: 16px;
-    }
-
-    .booking-calendar p {
-      color: var(--text-secondary);
-      font-size: 0.95rem;
-      line-height: 1.7;
-      margin-bottom: 28px;
-    }
-
-    .btn-calendar {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      background: transparent;
-      color: var(--accent);
-      padding: 14px 28px;
-      border: 2px solid var(--accent);
-      border-radius: 8px;
-      font-family: var(--font);
-      font-size: 1rem;
-      font-weight: 700;
-      cursor: pointer;
-      transition: background 0.2s ease, color 0.2s ease, transform 0.15s ease;
-      text-decoration: none;
-    }
-
-    .btn-calendar:hover {
-      background: var(--accent);
-      color: var(--text);
-      transform: translateY(-2px);
     }
 
     /* ========================================================
@@ -1191,10 +1129,6 @@
       .carousel-track {
         gap: 0;
         scroll-padding: 0;
-      }
-
-      .booking-grid {
-        grid-template-columns: 1fr;
       }
 
       .booking-form {
@@ -1574,19 +1508,6 @@
           </div>
         </div>
 
-        <!-- Google Calendar side -->
-        <div class="booking-calendar">
-          <div class="calendar-icon">
-            <i class="fas fa-calendar-alt"></i>
-          </div>
-          <h3>Schedule Directly</h3>
-          <p>Prefer to book directly? Click below to view Monty's availability and schedule your 30-minute session.</p>
-          <!-- REPLACE: insert Google Calendar appointment scheduling URL -->
-          <a href="https://calendar.google.com/calendar/appointments/REPLACE_WITH_LINK" target="_blank" rel="noopener" class="btn-calendar">
-            <i class="fas fa-calendar-check"></i>
-            Schedule Consultation
-          </a>
-        </div>
       </div>
     </div>
   </section>
